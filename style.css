@@ -160,10 +160,20 @@ footer {
     font-size: 1rem;
   }
 }
+
 .article-link {
   margin-top: 10px;
   font-size: 0.95rem;
   color: #fff; /* makes "Published Article:" text white */
+}
+
+.author a {
+  color: #fff;          /* keeps the link white to match your design */
+  text-decoration: none; /* removes underline */
+}
+
+.author a:hover {
+  text-decoration: underline; /* underline on hover for clarity */
 }
 
 .article-link a {

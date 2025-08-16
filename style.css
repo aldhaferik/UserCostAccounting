@@ -166,18 +166,23 @@ footer {
   font-size: 0.95rem;
   color: #fff; /* makes "Published Article:" text white */
 }
-
 .author a {
-  color: #fff;          /* keeps the link white to match your design */
-  text-decoration: none; /* removes underline */
+  color: #fff;          /* keeps the ORCID link white */
+  text-decoration: none;
 }
 
 .author a:hover {
   text-decoration: underline; /* underline on hover for clarity */
 }
 
+.article-link {
+  margin-top: 10px;
+  font-size: 0.95rem;
+  color: #fff;
+}
+
 .article-link a {
-  color: #ffdd57;        /* gold/yellow link to stand out */
+  color: #ffdd57;
   text-decoration: none;
 }
 

@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="User Cost Accounting in Extractive Industries – interactive article" />
+    <title>User Cost Accounting – aldhaferi.net</title>
+    <!-- Link to our stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Include external libraries -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- DataTables CSS -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css"
+    />
+  </head>
+  <body>
+    <header class="hero">
+      <div class="hero-content">
+        <h1>User Cost Accounting in Extractive Industries</h1>
+        <p>
+          A Value‑Based Framework for Sustainable Income Measurement
+        </p>
+        <p class="author">By Khaled Aldhaferi</p>
+      </div>
+    </header>
+    <nav class="navbar">
+      <ul class="nav-list">
+        <li><a href="#abstract">Abstract</a></li>
+        <li><a href="#introduction">Introduction</a></li>
+        <li><a href="#scorecard">Reinvestment Scorecard</a></li>
+        <li><a href="#swacc">SWACC</a></li>
+        <li><a href="#dualreporting">Dual Reporting</a></li>
+        <li><a href="#carbon">Carbon Budget</a></li>
+        <li><a href="#discussion">Discussion</a></li>
+        <li><a href="#conclusion">Conclusion</a></li>
+        <li><a href="#references">References</a></li>
+      </ul>
+    </nav>
+    <main>
+      <!-- Abstract section -->
+      <section id="abstract">
+        <h2>Abstract</h2>
+        <p>
+          Conventional accounting practices in extractive industries systematically
+          overstate income by failing to deduct the economic cost of non‑renewable
+          resource depletion. This leads to financial statements that present
+          unsustainable earnings as if they were genuine profits, misinforming
+          stakeholders and undermining capital maintenance. This paper proposes
+          a comprehensive user cost accounting framework that integrates natural
+          capital depreciation, carbon budget constraints and reinvestment
+          behaviour into corporate financial reporting. Inspired by Keynes and
+          El Serafy, the user cost approach differentiates between true
+          sustainable income and asset liquidation, allocating a portion of
+          resource rents for capital replacement to ensure intergenerational
+          equity. The framework is developed in eight dimensions: a critical
+          review of traditional vs. sustainable accounting; creation of a
+          reinvestment scorecard to measure capital replenishment performance;
+          introduction of a Sustainability‑Weighted Cost of Capital (SWACC) to
+          align discounting with long‑term societal preferences; construction
+          of dual financial statements contrasting conventional and sustainable
+          reporting; extension to carbon budget accounting as an emissions
+          depletion model; integration of human and social capital depreciation
+          metrics; exploration of blockchain technologies to secure ESG data
+          transparency; and policy recommendations for standard‑setters and
+          regulators. Empirical validation includes case studies of
+          Freeport‑McMoRan, Anglo American and Ørsted. The study contributes a
+          novel, operationalisable framework for sustainability accounting in
+          extractive sectors, aligning corporate financial metrics with
+          long‑term resource stewardship and climate constraints.
+        </p>
+      </section>
+      <!-- Introduction section -->
+      <section id="introduction">
+        <h2>1. Introduction</h2>
+        <p>
+          The growing global emphasis on sustainability, climate risk and the
+          energy transition, which can drastically shorten the economic life of
+          fossil fuel and mineral reserves, demands more accurate and
+          forward‑looking financial reporting in extractive industries. Under
+          traditional accounting (e.g., U.S. GAAP or IFRS), resource extraction
+          profits are largely treated as current income without fully
+          recognising the diminution of the underlying natural asset base.
+          Depletion is often recognised via units‑of‑production amortisation or
+          tax‑based percentage depletion allowances, which allocate historical
+          costs but do not reflect the economic loss of finite resource wealth.
+          As a result, a mining or oil company might appear profitable while it
+          is effectively liquidating its resource assets, potentially
+          misleading stakeholders about long‑term sustainability. Prior
+          research in green national accounting and “genuine savings” has
+          demonstrated that standard profit measures overstate sustainable
+          income when resource depletion and environmental degradation are
+          ignored. For instance, Hartwick’s rule showed that if all rents from
+          exhaustible resources are invested in reproducible capital,
+          consumption can remain constant indefinitely—a theoretical
+          underpinning for sustainability in an economy with depleting
+          resources. Hamilton extended these ideas by calculating changes in
+          wealth per capita including natural capital, demonstrating that many
+          resource‑rich countries were experiencing declining wealth when
+          proper adjustments were made. Daly argued that genuine sustainable
+          development requires reinvestment of resource rents into forms of
+          wealth that can support future well‑being. These insights underscore
+          that treating resource windfalls as pure income is dangerous; some
+          portion must be set aside to preserve future capacity. This paper
+          proposes a user cost accounting framework for extractive industries
+          to address these shortcomings.
+        </p>
+      </section>
+      <!-- Scorecard section -->
+      <section id="scorecard">
+        <h2>2. Reinvestment Scorecard</h2>
+        <p>
+          To assess how extractive companies reinvest resource rents into new
+          capital, we introduce a <strong>Reinvestment Scorecard</strong> that
+          evaluates firms across multiple dimensions. The scorecard provides a
+          qualitative rating—Low (L), Medium (M), Medium/Low (M/L), High (H) or
+          Unknown (UK)—for each criterion. A high score indicates that the
+          company is allocating a significant portion of its earnings toward
+          replacing and expanding its asset base, while a low score suggests
+          the company may be consuming its natural capital and risking
+          unsustainable operations.
+        </p>
+        <p>
+          The table below summarises the scorecard results for three
+          representative companies—Freeport‑McMoRan, Anglo American and Ørsted.
+          The categories include a sustainable capital expenditure (CapEx) ratio,
+          reserve replacement rate, financial reinvestment rate, carbon
+          transition progress and social &amp; human investment. Hover over any
+          rating to see a short description and use the dropdown arrows to
+          filter or sort the table.
+        </p>
+        <table id="scorecard-table" class="display" style="width:100%">
+          <thead>
+            <tr>
+              <th>Company</th>
+              <th>Sustainable CapEx Ratio</th>
+              <th>Reserve Replacement Rate</th>
+              <th>Reinvestment Rate (Financial)</th>
+              <th>Carbon Transition Progress</th>
+              <th>Social &amp; Human Investment</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Freeport‑McMoRan</td>
+              <td data-desc="Spending on sustaining and expanding reserves">L</td>
+              <td data-desc="Ability to replace extracted reserves">M</td>
+              <td data-desc="Financial reinvestment of earnings">M/L</td>
+              <td data-desc="Investment in low‑carbon transition">M</td>
+              <td data-desc="Spending on social &amp; human capital">M</td>
+            </tr>
+            <tr>
+              <td>Anglo American</td>
+              <td data-desc="Spending on sustaining and expanding reserves">M</td>
+              <td data-desc="Ability to replace extracted reserves">H</td>
+              <td data-desc="Financial reinvestment of earnings">M</td>
+              <td data-desc="Investment in low‑carbon transition">M</td>
+              <td data-desc="Spending on social &amp; human capital">M</td>
+            </tr>
+            <tr>
+              <td>Ørsted</td>
+              <td data-desc="Spending on sustaining and expanding reserves">H</td>
+              <td data-desc="Ability to replace extracted reserves">H</td>
+              <td data-desc="Financial reinvestment of earnings">H</td>
+              <td data-desc="Investment in low‑carbon transition">UK</td>
+              <td data-desc="Spending on social &amp; human capital">M</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <!-- SWACC section -->
+      <section id="swacc">
+        <h2>3. Sustainability‑Weighted Cost of Capital (SWACC)</h2>
+        <p>
+          A pivotal input in calculating user cost is the discount rate used to
+          determine how much of today’s revenue must be saved to sustain future
+          income. Corporate accounting typically employs a Weighted Average
+          Cost of Capital (WACC) reflecting investors’ required return,
+          whereas intergenerational equity implies using a much lower social
+          discount rate. To bridge these perspectives, we define the
+          <strong>Sustainability‑Weighted Cost of Capital (SWACC)</strong> as a
+          weighted blend of the corporate cost of capital and a social rate:
+        </p>
+        <p class="formula">
+          <em>r<sub>eff</sub> = (1 − λ) r<sub>corp</sub> + λ r<sub>social</sub></em>
+        </p>
+        <p>
+          where λ (lambda) ranges from 0 to 1. When λ = 0 the firm uses its
+          traditional WACC; when λ = 1 the firm fully adopts a social rate. A
+          higher λ implies a lower effective discount rate and therefore a
+          larger user cost set‑aside. The interactive chart below illustrates
+          how the effective discount rate declines as the weight on
+          sustainability increases. Hover over the line to see the exact
+          values.
+        </p>
+        <canvas id="swaccChart" width="400" height="200"></canvas>
+      </section>
+      <!-- Dual reporting section -->
+      <section id="dualreporting">
+        <h2>4. Dual Financial Reporting</h2>
+        <p>
+          Traditional financial statements report earnings net of
+          depreciation and depletion based on historical cost. To assess
+          sustainability, we reconstruct a condensed income statement for
+          Freeport‑McMoRan’s 2023 results under two regimes: (A)
+          conventional U.S. GAAP/IFRS accounting and (B) sustainable
+          accounting incorporating the user cost charge. The table and chart
+          below show how recognising natural capital depreciation reduces
+          operating profit, pre‑tax income and net income compared with the
+          traditional view.
+        </p>
+        <table id="dual-table" class="display" style="width:100%">
+          <thead>
+            <tr>
+              <th>Line Item</th>
+              <th>Traditional (USD m)</th>
+              <th>Sustainable (USD m)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Revenue</td><td>22855</td><td>22855</td></tr>
+            <tr><td>Operating Costs (excl. DD&A)</td><td>-14562</td><td>-14562</td></tr>
+            <tr><td>DD&amp;A</td><td>-2068</td><td>-1479</td></tr>
+            <tr><td>User Cost</td><td>0</td><td>-1586</td></tr>
+            <tr><td>Operating Profit (EBIT)</td><td>6225</td><td>5228</td></tr>
+            <tr><td>Interest expense, net</td><td>-219</td><td>-219</td></tr>
+            <tr><td>Pre‑tax Income</td><td>6006</td><td>5010</td></tr>
+            <tr><td>Income Tax (38%)</td><td>-2270</td><td>-1903</td></tr>
+            <tr><td>Equity in affiliated companies’ earnings</td><td>15</td><td>15</td></tr>
+            <tr><td>Net Income</td><td>3751</td><td>3121</td></tr>
+          </tbody>
+        </table>
+        <canvas id="incomeChart" width="400" height="200"></canvas>
+      </section>
+      <!-- Carbon budget section -->
+      <section id="carbon">
+        <h2>5. Carbon Budget Accounting</h2>
+        <p>
+          Meeting global climate goals means that companies must operate within
+          finite carbon budgets. We illustrate a hypothetical depletion
+          schedule for Anglo American’s operational (Scope 1+2) emissions.
+          Starting from a total allowable carbon budget of 50 Mt CO₂, the
+          schedule shows projected emissions reductions toward net zero. The
+          budget shrinks over time as emissions are released. If emissions
+          reductions lag, the remaining budget falls more quickly, signalling
+          the need for corrective action.
+        </p>
+        <table id="carbon-table" class="display" style="width:100%">
+          <thead>
+            <tr>
+              <th>Year</th>
+              <th>Emissions (Mt CO₂)</th>
+              <th>% Change vs Prior</th>
+              <th>Carbon Budget Remaining (Mt)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>2020</td><td>4.5</td><td>–</td><td>50.0</td></tr>
+            <tr><td>2021</td><td>4.4</td><td>-2%</td><td>45.6</td></tr>
+            <tr><td>2022</td><td>4.0</td><td>-9%</td><td>41.6</td></tr>
+            <tr><td>2023</td><td>3.6</td><td>-10%</td><td>38.0</td></tr>
+            <tr><td>2024</td><td>3.3</td><td>-8%</td><td>34.7</td></tr>
+            <tr><td>2025</td><td>3.0</td><td>-10%</td><td>31.7</td></tr>
+            <tr><td>2030</td><td>2.0</td><td>-33%</td><td>20.0</td></tr>
+            <tr><td>2040</td><td>0.0</td><td>-100%</td><td>0.0</td></tr>
+          </tbody>
+        </table>
+        <canvas id="carbonChart" width="400" height="200"></canvas>
+      </section>
+      <!-- Discussion section -->
+      <section id="discussion">
+        <h2>6. Discussion</h2>
+        <p>
+          The case studies reveal substantial differences between conventional and
+          sustainable accounting results. Companies with high reinvestment and
+          rapid decarbonisation strategies—such as Ørsted—show more
+          resilient business models, while firms with low reinvestment scores
+          risk erosion of their asset base and stranded assets from future
+          climate policy. The SWACC framework makes explicit the implicit
+          assumptions about intergenerational discounting, allowing investors
+          and regulators to calibrate sustainability preferences. Dual
+          reporting highlights how profits shrink once natural capital
+          depreciation is recognised. Carbon budget accounting provides a
+          tangible early warning system: if actual emissions exceed the
+          planned decline path, the firm’s remaining carbon budget rapidly
+          dwindles, signalling a potential need for asset impairments or
+          accelerated transition investments.
+        </p>
+      </section>
+      <!-- Conclusion section -->
+      <section id="conclusion">
+        <h2>7. Conclusion and Future Research</h2>
+        <p>
+          User cost accounting provides a robust framework for aligning
+          corporate finance with sustainability objectives. By reserving a
+          portion of resource rents for capital renewal, firms ensure that
+          today’s profits do not come at the expense of tomorrow’s capacity.
+          Integrating discount‑rate adjustments, carbon budgets and social and
+          human capital measures into this framework yields a comprehensive
+          approach to sustainable income measurement. Future research may
+          extend the scorecard to include biodiversity and ecosystem services,
+          refine SWACC calibration using empirical estimates of societal time
+          preferences, and pilot blockchain‑based assurance platforms to
+          enhance ESG data integrity. Policy makers should consider requiring
+          supplemental “Statements of Resource Earnings and Reinvestment” and
+          encourage adoption of SWACC‑adjusted discounting in financial
+          reporting standards. As resource constraints and climate risks
+          intensify, user cost accounting offers a path toward more resilient
+          and equitable economic outcomes.
+        </p>
+      </section>
+      <!-- References section -->
+      <section id="references">
+        <h2>References</h2>
+        <ol>
+          <li>Schaltegger, S., &amp; Burritt, R. (2000). <em>Contemporary Environmental Accounting: Issues, Concepts and Practice.</em> Sheffield: Greenleaf Publishing.</li>
+          <li>Freeport‑McMoRan Inc. (2024). <em>Annual Report 2023 (Form 10‑K).</em> Phoenix, AZ: Freeport‑McMoRan.</li>
+          <li>Campbell, C.J. (2002). Petroleum and People. <em>Population and Environment, 24(3)</em>, 193–207.</li>
+          <li>Laherrère, J. (2001). Estimates of Oil Reserves. <em>Plant &amp; Oil, 12(4)</em>, 3–9.</li>
+          <li>Hartwick, J.M. (1977). Intergenerational Equity and the Investing of Rents from Exhaustible Resources. <em>American Economic Review, 67(5)</em>, 972–974.</li>
+          <li>Hamilton, K. (2003). Sustaining Economic Welfare: Estimating Changes in Per Capita Wealth. <em>Environment, Development and Sustainability, 5(3–4)</em>, 419–436.</li>
+          <li>Daly, H.E. (1994). Operationalizing Sustainable Development by Investing in Natural Capital. <em>Annals of the New York Academy of Sciences, 794(1)</em>, 213–228.</li>
+          <li>Keynes, J.M. (1936). <em>The General Theory of Employment, Interest and Money.</em> London: Macmillan.</li>
+          <li>El Serafy, S. (1989). The Proper Calculation of Income from Depletable Natural Resources. In Ahmad, El Serafy &amp; Lutz (Eds.), <em>Environmental Accounting for Sustainable Development</em>. Washington, DC: World Bank.</li>
+          <li>Hicks, J.R. (1946). <em>Value and Capital</em> (2nd ed.). Oxford: Clarendon Press.</li>
+          <li>Repetto, R., et al. (1989). <em>Wasting Assets: Natural Resources in the National Income Accounts.</em> Washington, DC: World Resources Institute.</li>
+          <li>Collier, P. (2010). <em>The Plundered Planet: Why We Must—and How We Can—Manage Nature for Global Prosperity.</em> Oxford: Oxford University Press.</li>
+          <li>Drupp, M.A., Freeman, M.C., Groom, B., &amp; Nesje, F. (2018). Discounting disentangled. <em>American Economic Journal: Economic Policy, 10(4)</em>, 109–134.</li>
+          <li>Science Based Targets initiative. (2022). <em>SBTi Progress Report 2021.</em></li>
+          <li>Anglo American plc. (2022). <em>Climate Change Report 2022: Our Pathway to Carbon Neutral Operations by 2040.</em> London: Anglo American.</li>
+          <li>International Integrated Reporting Council (IIRC). (2013). <em>The International Framework.</em></li>
+          <li>Hyperledger Climate Action SIG. (2022). <em>Blockchain for Climate Action and Accounting: Emerging Use Cases.</em> Hyperledger Foundation Special Interest Group Report.</li>
+          <li>Energy Web. (2021). <em>Blockchain‑based Energy Attribute Management: Case Studies from Energy Web.</em> Energy Web Foundation Report.</li>
+          <li>Energy &amp; Mines Digital Trust. (2024). <em>Pilot project summary: Secure data sharing for ESG in mining.</em> British Columbia Ministry of Energy, Mines &amp; Low Carbon Innovation.</li>
+          <li>European Commission. (2022). Directive (EU) 2022/2464 on corporate sustainability reporting (CSRD). <em>Official Journal of the European Union, 65(L322)</em>, 15–80.</li>
+          <li>SEC. (2022). SEC proposes rules to enhance and standardise climate‑related disclosures for investors.</li>
+          <li>World Bank. (2011). <em>The Changing Wealth of Nations: Measuring Sustainable Development in the New Millennium.</em> Washington, DC: World Bank.</li>
+          <li>Basu, R., &amp; Pegg, S. (2020). Minerals are a shared inheritance: Accounting for the resource curse. <em>The Extractive Industries and Society, 7(4)</em>, 1369–1376.</li>
+          <li>Neubert, M. (2020). Ørsted's renewable‑energy transformation. McKinsey &amp; Company.</li>
+          <li>International Energy Agency (IEA). (2018). <em>World Energy Outlook 2018.</em> Paris: IEA Publications.</li>
+          <li>Anglo American plc. (2024). <em>Integrated Annual Report 2023.</em> London: Anglo American.</li>
+          <li>Cropley, E. (2021). Anglo spinoff points to darker future for coal. Reuters.</li>
+          <li>Ørsted A/S. (2020). Ørsted to become carbon neutral by 2025. Company news release.</li>
+          <li>Milman, O. (2023). Shell’s actual spending on renewables is a fraction of what it claims, group alleges. <em>The Guardian.</em></li>
+          <li>IPCC. (2021). Summary for Policymakers. In: Climate Change 2021: The Physical Science Basis.</li>
+          <li>Heberger, J.R. (2018). Demonstrating the financial impact of mining injuries with the Safety Pays in Mining web application. <em>Mining Engineering, 70(12)</em>, 37–43.</li>
+          <li>Bloomberg. (2023). Strike at Mexico gold mine costs owner $3.7 million a day. Bloomberg News.</li>
+          <li>Runyon, N. (2024). Greenwashing trends point to increasing sophistication beyond the environment. Thomson Reuters Institute.</li>
+          <li>McGlade, C., &amp; Ekins, P. (2015). The geographical distribution of fossil fuels unused when limiting global warming to 2°C. <em>Nature, 517(7533)</em>, 187–190.</li>
+          <li>Del Rio Ricardo Mardones, C., et al. (2019). Correction of Chilean GDP for natural capital depreciation and environmental degradation caused by copper mining. <em>Journal of Regional Policy, 60</em>, 143–152.</li>
+        </ol>
+      </section>
+    </main>
+    <footer>
+      <p>© 2025 aldhaferi.net. All rights reserved.</p>
+    </footer>
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

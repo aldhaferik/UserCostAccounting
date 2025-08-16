@@ -36,6 +36,7 @@
       <ul class="nav-list">
         <li><a href="#abstract">Abstract</a></li>
         <li><a href="#introduction">Introduction</a></li>
+        <li><a href="#literaturereview">Literature Review</a></li>
         <li><a href="#scorecard">Reinvestment Scorecard</a></li>
         <li><a href="#swacc">SWACC</a></li>
         <li><a href="#dualreporting">Dual Reporting</a></li>
@@ -82,25 +83,159 @@
       <section id="introduction">
         <h2>1. Introduction</h2>
         <p>
-          The growing global emphasis on sustainability, climate risk, and the energy transition, which can drastically shorten the economic life of fossil fuel and mineral reserves, demands more accurate and forward-looking financial reporting in extractive industries [1]. Under traditional accounting (e.g., U.S. GAAP or IFRS), resource extraction profits are largely treated as current income without fully recognizing the diminution of the underlying natural asset base[2]. For example, depletion is often recognized via units-of-production amortization or tax-based percentage depletion allowances, which allocate historical costs but do not reflect the economic loss of finite resource wealth. As a result, a mining or oil company might appear profitable while it is effectively liquidating its resource assets, potentially misleading stakeholders about long-term sustainability [3][4]. The consequences of ignoring resource depletion are becoming more severe in an era of potential “peak oil” [3] and rapid climate-policy shifts that could strand fossil fuel assets (e.g., unburnable carbon) well before physical exhaustion [4].
-Prior research in green national accounting and “genuine savings” has demonstrated that standard profit measures overstate sustainable income when resource depletion and environmental degradation are ignored. For instance, Hartwick’s rule [5] showed that if all rents from exhaustible resources are invested in reproducible capital, consumption can remain constant indefinitely, a theoretical underpinning for sustainability in an economy with depleting resources. Hamilton [6] extended these ideas by calculating changes in wealth per capita including natural capital, demonstrating that many resource-rich countries were experiencing declining wealth when proper adjustments were made. This mirrored earlier concerns by Daly [7], who argued that genuine sustainable development requires reinvestment of resource rents into forms of wealth that can support future well-being. These insights underscore that treating resource windfalls as pure income is dangerous; some portion must be set aside to preserve future capacity.
-This paper proposes and discusses a user cost accounting framework for extractive industries, a value-based approach initially inspired by Keynes [8] and developed by El Serafy [9], to address these shortcomings in corporate financial reporting. Under the user cost concept, only a fraction of extraction revenue is treated as true income, with the remainder set aside to invest in replacement capital, thereby maintaining the productive base of the firm or economy [10]. In essence, user cost accounting treats a portion of resource revenue analogously to a depreciation charge on natural capital [11]. This idea operationalizes Hicks’s definition of income (the amount one can consume without reducing future capacity) for non-renewable resources: part of the resource rent must be preserved to secure future income streams [12]. We build on these foundations and extend them to modern corporate accounting, including not only natural resource depletion but also climate constraints and social impacts.
-Our contributions are both conceptual and practical, and can be summarized as follows: 
--	Critical Review of Conventional vs. Sustainable Accounting: We review the limitations of traditional accounting methods for depletion and contrast them with the sustainable income concept. We bridge academic and professional discourse to ensure our framework is practical, not just theoretical. We clarify the theoretical underpinnings of user cost and sustainable income, and show mathematically how user cost accounting can be integrated into financial reporting.
--	Reinvestment Scorecard Development: Building on new case studies, we propose a quantitative Reinvestment Scorecard with concrete metrics and thresholds [13]. This scorecard evaluates how effectively an extractive company is reinvesting resource rents into sustainable assets or diversification. We define benchmarks for “High”, “Moderate”, and “Low” performance on key indicators (e.g., the percentage of CapEx in renewable or alternative projects, reserve replacement ratio, carbon intensity improvements).
--	Introduction of Sustainability-Weighted Discount Rates (SWACC): We refine the user cost formula by examining the choice of discount rate [14]. Traditionally, the firm’s cost of capital (a private discount rate) is used, but we introduce a Sustainability-Weighted Cost of Capital (SWACC) that blends the corporate WACC with a lower “social” discount rate via a factor λ (lambda). We explore how λ can be dynamically adjusted over time based on reserve depletion profiles or external policy changes. For example, as reserves dwindle or as carbon budgets tighten, λ can be increased to place more weight on the social rate, thus increasing the user cost charge to reflect greater emphasis on sustainability.
--	Dual Financial Reporting, Conventional vs. Sustainable Accounts: We translate the theoretical framework into a dual reporting format. Using Freeport-McMoRan’s 2023 financial data as an illustrative case, we construct side-by-side income statements and balance sheets under (A) traditional accounting and (B) sustainable accounting with user cost. This tangible illustration shows, line by line, how revenue, expenses, and profits would be adjusted. In our sustainable version, we introduce a “User Cost (Natural Capital Depreciation)” expense that reduces the recognized income. We also show how the accumulated user cost is carried on the balance sheet as a form of replacement reserve fund rather than being paid out or consumed.
--	Carbon Budget Accounting Extension: We extend the framework to address climate change by developing a carbon budget depletion accounting method. We treat a company’s allowable emissions (under a given climate target) as a finite resource akin to a mineral reserve. Using Science Based Targets initiative guidance and climate models, we illustrate how a carbon-intensive company can calculate its total carbon budget (e.g., the total CO₂ it can emit from now until 2050 under a 1.5°C scenario) and then allocate an annual “carbon depletion charge” as it emits [15]. We provide a case example with an illustrative depletion schedule for Anglo American’s operational emissions, given its net-zero commitments by 2040 [16].
--	Incorporating Human and Social Capital Costs: Recognizing that sustainable income must also account for human and social dimensions, we propose an extension of the user cost paradigm to human and social capital [17]. Extractive operations can degrade human capital (through worker injuries, skill depletion) and social capital (through community impacts and conflict). We outline how companies might estimate a Human Capital User Cost (e.g., based on training investment needed to offset workforce turnover or lost productivity from injuries) and a Social Capital User Cost (e.g., based on community investments needed to offset social impacts or the economic cost of social conflicts). While these are more challenging to quantify than natural capital depletion, we provide illustrative approaches to include these costs in the sustainable income framework.
--	Implementation Tools, Blockchain and Data Transparency: To support practical adoption, we explore how emerging technologies can facilitate trustworthy reporting of sustainable income. We discuss blockchain-based ESG data tracking systems that provide an immutable record of production, emissions, and reinvestment data [18][19]. We highlight a real pilot [20] where multiple mining companies and stakeholders share ESG data via decentralized identities and data trusts, enhancing verification while preserving privacy. These approaches can build stakeholder trust in the new accounting measures by ensuring verifiability (countering greenwashing) and proper use of funds earmarked for sustainability.
--	Policy Implications and Key Recommendations: We examine the policy and standard-setting implications of our framework [21]. Regulators and accounting standard-setters aiming to strengthen sustainability reporting can draw on these concepts for new guidelines. We offer specific actionable recommendations, summarized in a “Key Policy Recommendations” section, such as mandating a supplemental “Statement of Resource Earnings and Reinvestment” in financial reports, or providing tax incentives for reinvesting in renewable capital. We align our suggestions with current regulatory trends (e.g., the SEC’s climate disclosure proposal [20] and the EU’s CSRD) to demonstrate feasibility. By prioritizing the top two to three measures, we provide a roadmap for policymakers to drive adoption of sustainable income accounting.
-Overall, our paper integrates theory, empirical analysis, and practical guidance to argue that user cost-based sustainable income reporting can enhance transparency and long-termism in extractive industries. 
+          The growing global emphasis on sustainability, climate risk, and the energy transition, which can drastically shorten the economic 
+          life of fossil fuel and mineral reserves, demands more accurate and forward-looking financial reporting in extractive industries [1]. 
+          Under traditional accounting (e.g., U.S. GAAP or IFRS), resource extraction profits are largely treated as current income without fully 
+          recognizing the diminution of the underlying natural asset base[2]. For example, depletion is often recognized via units-of-production 
+          amortization or tax-based percentage depletion allowances, which allocate historical costs but do not reflect the economic loss of finite 
+          resource wealth. As a result, a mining or oil company might appear profitable while it is effectively liquidating its resource assets, potentially
+          misleading stakeholders about long-term sustainability [3][4]. The consequences of ignoring resource depletion are becoming more severe in an era of
+          potential “peak oil” [3] and rapid climate-policy shifts that could strand fossil fuel assets (e.g., unburnable carbon) well before physical exhaustion [4].
+          Prior research in green national accounting and “genuine savings” has demonstrated that standard profit measures overstate sustainable income when resource depletion 
+          and environmental degradation are ignored. For instance, Hartwick’s rule [5] showed that if all rents from exhaustible resources are invested in reproducible capital, 
+          consumption can remain constant indefinitely, a theoretical underpinning for sustainability in an economy with depleting resources. Hamilton [6] extended these ideas by
+          calculating changes in wealth per capita including natural capital, demonstrating that many resource-rich countries were experiencing declining wealth when proper adjustments were made.
+          This mirrored earlier concerns by Daly [7], who argued that genuine sustainable development requires reinvestment of resource rents into forms of wealth that can support future well-being. 
+          These insights underscore that treating resource windfalls as pure income is dangerous; some portion must be set aside to preserve future capacity.
+          This paper proposes and discusses a user cost accounting framework for extractive industries, a value-based approach initially inspired by Keynes [8] and developed by El Serafy [9],
+          to address these shortcomings in corporate financial reporting. Under the user cost concept, only a fraction of extraction revenue is treated as true income, with the remainder set 
+          aside to invest in replacement capital, thereby maintaining the productive base of the firm or economy [10]. In essence, user cost accounting treats a portion of resource revenue 
+          analogously to a depreciation charge on natural capital [11]. This idea operationalizes Hicks’s definition of income (the amount one can consume without reducing future capacity) 
+          for non-renewable resources: part of the resource rent must be preserved to secure future income streams [12]. We build on these foundations and extend them to modern corporate 
+          accounting, including not only natural resource depletion but also climate constraints and social impacts.
+          Our contributions are both conceptual and practical, and can be summarized as follows: 
+          -	Critical Review of Conventional vs. Sustainable Accounting: We review the limitations of traditional accounting methods for depletion and contrast them with the sustainable income concept.
+          We bridge academic and professional discourse to ensure our framework is practical, not just theoretical. We clarify the theoretical underpinnings of user cost and sustainable income, and 
+          show mathematically how user cost accounting can be integrated into financial reporting.
+          -	Reinvestment Scorecard Development: Building on new case studies, we propose a quantitative Reinvestment Scorecard with concrete metrics and thresholds [13]. This scorecard evaluates how 
+          effectively an extractive company is reinvesting resource rents into sustainable assets or diversification. We define benchmarks for “High”, “Moderate”, and “Low” performance on key 
+          indicators (e.g., the percentage of CapEx in renewable or alternative projects, reserve replacement ratio, carbon intensity improvements).
+          -	Introduction of Sustainability-Weighted Discount Rates (SWACC): We refine the user cost formula by examining the choice of discount rate [14]. Traditionally, the firm’s cost of 
+          capital (a private discount rate) is used, but we introduce a Sustainability-Weighted Cost of Capital (SWACC) that blends the corporate WACC with a lower “social” discount rate via a 
+          factor λ (lambda). We explore how λ can be dynamically adjusted over time based on reserve depletion profiles or external policy changes. For example, as reserves dwindle or as carbon 
+          budgets tighten, λ can be increased to place more weight on the social rate, thus increasing the user cost charge to reflect greater emphasis on sustainability.
+          -	Dual Financial Reporting, Conventional vs. Sustainable Accounts: We translate the theoretical framework into a dual reporting format. Using Freeport-McMoRan’s 2023 financial data as 
+          an illustrative case, we construct side-by-side income statements and balance sheets under (A) traditional accounting and (B) sustainable accounting with user cost. This tangible 
+          illustration shows, line by line, how revenue, expenses, and profits would be adjusted. In our sustainable version, we introduce a “User Cost (Natural Capital Depreciation)” expense that
+          reduces the recognized income. We also show how the accumulated user cost is carried on the balance sheet as a form of replacement reserve fund rather than being paid out or consumed.
+          -	Carbon Budget Accounting Extension: We extend the framework to address climate change by developing a carbon budget depletion accounting method. We treat a company’s allowable emissions
+          (under a given climate target) as a finite resource akin to a mineral reserve. Using Science Based Targets initiative guidance and climate models, we illustrate how a carbon-intensive
+          company can calculate its total carbon budget (e.g., the total CO₂ it can emit from now until 2050 under a 1.5°C scenario) and then allocate an annual “carbon depletion charge” as it emits [15].
+          We provide a case example with an illustrative depletion schedule for Anglo American’s operational emissions, given its net-zero commitments by 2040 [16].
+          -	Incorporating Human and Social Capital Costs: Recognizing that sustainable income must also account for human and social dimensions, we propose an extension of the user cost paradigm 
+          to human and social capital [17]. Extractive operations can degrade human capital (through worker injuries, skill depletion) and social capital (through community impacts and conflict). 
+          We outline how companies might estimate a Human Capital User Cost (e.g., based on training investment needed to offset workforce turnover or lost productivity from injuries) and a Social
+          Capital User Cost (e.g., based on community investments needed to offset social impacts or the economic cost of social conflicts). While these are more challenging to quantify 
+          than natural capital depletion, we provide illustrative approaches to include these costs in the sustainable income framework.
+          -	Implementation Tools, Blockchain and Data Transparency: To support practical adoption, we explore how emerging technologies can facilitate trustworthy reporting of sustainable income.
+          We discuss blockchain-based ESG data tracking systems that provide an immutable record of production, emissions, and reinvestment data [18][19]. We highlight a real pilot [20] where 
+          multiple mining companies and stakeholders share ESG data via decentralized identities and data trusts, enhancing verification while preserving privacy. These approaches can build 
+          stakeholder trust in the new accounting measures by ensuring verifiability (countering greenwashing) and proper use of funds earmarked for sustainability.
+          -	Policy Implications and Key Recommendations: We examine the policy and standard-setting implications of our framework [21]. Regulators and accounting standard-setters aiming to 
+          strengthen sustainability reporting can draw on these concepts for new guidelines. We offer specific actionable recommendations, summarized in a “Key Policy Recommendations” section, 
+          such as mandating a supplemental “Statement of Resource Earnings and Reinvestment” in financial reports, or providing tax incentives for reinvesting in renewable capital. We align our suggestions with current regulatory trends (e.g., the SEC’s climate disclosure proposal [20] and the EU’s CSRD) to demonstrate feasibility. By prioritizing the top two to three measures, we provide a roadmap for policymakers to drive adoption of sustainable income accounting.
+          Overall, our paper integrates theory, empirical analysis, and practical guidance to argue that user cost-based sustainable income reporting can enhance transparency and long-termism 
+          in extractive industries. 
 
         </p>
       </section>
+      <!-- Literature Review section -->
+      <section id="LTR">
+        <h2>2. User Cost Accounting and Sustainable Income</h2>
+        <p>
+          The concept of sustainable income is grounded in the idea of Hicksian income, 
+          the maximum amount one can consume in a period without reducing the ability to
+          consume the same amount in the future [11]. For an economy or a firm that relies
+          on depleting natural resources, true income must exclude the portion of revenue
+          that comes from consuming those resources. Salah El Serafy’s “user cost” method
+          formalized this idea for non-renewable resources by splitting each period’s resource 
+          revenue into two parts: (1) a true income component that can be safely consumed,
+          and (2) a user cost component that represents the depreciation of natural capital 
+          and must be reinvested to sustain future income [10]. In other words, El Serafy’s 
+          method “splits the revenue from the sale of an exhaustible resource into a capital 
+          element (or ‘user cost’) and a value-added element representing true income”. The 
+          income portion is what the firm or economy can count as profit without impoverishing
+          future periods, while the user cost portion is reserved to maintain future income 
+          streams once the resource is depleted.
+          The basic logic can be illustrated simply: when a company sells a barrel of oil or a
+          ton of copper ore, it is partly drawing down its wealth. Only some of the revenue from that
+          sale is analogous to an income or yield on capital (which can be consumed); the remainder 
+          is akin to liquidating an asset. If sustainable income is the goal, a portion of the
+          proceeds must be set aside and converted into another form of capital so that when the
+          resource is gone, the company can still generate income at the same level [10][6]. This
+          is analogous to the famous Hartwick rule at the micro level, ensuring that resource rents
+          are not simply treated as windfall profits but are used to secure the future.
+        </p>
+      </section>
+      <!-- Literature Review section -->
+      <section id="LTR">
+        <h2>3. El Serafy’s Formula</h2>
+        <p>
+          El Serafy (1989) provided a simple model to determine the split between true income (X) and 
+          user cost (R–X) for a depleting resource. The model assumes a non-renewable resource will generate
+          a constant net revenue (rent) R each year over a finite horizon of (n+1) years (years 0 through n,
+          inclusive). In practice, we might use a proxy like Earnings Before Interest, Tax, Depreciation, 
+          Depletion & Amortization (EBITDDA) for R, to represent the net cash flow from the resource.
+          After year n, the resource is exhausted and produces no further revenue. A constant discount rate r is used, 
+          representing the return on investment or the interest rate at which saved user cost will grow 
+          (often taken as the opportunity cost of capital or a societal rate).
+          The goal is to find the amount X (treated as sustainable income each year) such that consuming X 
+          and reinvesting the remainder (R–X) from each year 0 to n yields a fund that can produce an equivalent
+          amount X in perpetuity from year n+1 onward (through investment returns).
+          Under these assumptions, El Serafy derived that the sustainable income X each year is given by the formula:
+          X=R×(1-1/(1+r)^( n+1) )
+          and the corresponding user cost (depletion charge) each year is:
+          "User Cost"=R-X=R/(1+r)^( n+1)
+          This result can be understood intuitively: the fraction of revenue that can be considered true income is
+          1-1/(1+r)^( n+1)
+          and the fraction that is user cost (to reinvest) is
+          1/(1+r)^( n+1) 
+          For example, if the time horizon is 25 years (n=24, so n+1=25 years of revenue including year 0) and the discount
+          rate is r, the user cost fraction might be around 15–25% depending on r. The condition ensures that by reinvesting
+          that user cost annually, the accumulated fund by the end of year n will be enough to generate interest equal to X 
+          thereafter, replacing the lost resource revenue. In effect, X is the constant level of perpetuity-equivalent income
+          that the finite resource stream is converted into.
+          To illustrate with numbers, suppose r = 5% and n = 20 years. Then  approx 0.377. So about 37.7% of each year’s revenue would
+          need to be reinvested (user cost) and ~62.3% could be treated as income. If r is lower or n is longer, the required
+          reinvestment fraction increases (because it’s harder to sustain the same level of income when either growth is
+          slow or the resource lasts fewer years).
+          This user cost approach has been influential in the field of environmental and resource accounting. 
+          It operationalizes the Hicksian income concept in practical terms and has been applied primarily in national
+          accounting to adjust GDP or NDP (Net Domestic Product) for resource depletion. For example, the World Bank’s 
+          concept of Adjusted Net Saving (also known as genuine saving) incorporates a deduction for the depletion of
+          natural resources, inspired by methods like El Serafy’s [20]. By separating income from depletion, one can
+          measure what some have called sustainable yield or permanent income from resource extraction [6][10]. Studies
+          have shown that ignoring this separation leads to significant overestimation of income [23]. Yaduma et al.
+          note that standard national accounts count natural resource rents as income “without making a corresponding 
+          adjustment to the depleted natural capital stock,” thereby producing misleadingly high GDP figures [24].
+          In fact, treating the entirety of resource revenue as income is equivalent to a country (or company) 
+          selling off its assets and calling the proceeds profit.
+          A number of empirical studies underscore the magnitude of this overstatement. For instance, in Brazil and Indonesia, 
+          early applications of the user cost and related approaches revealed that a substantial portion of what was recorded
+          as mining income would need to be set aside to preserve wealth . In Peru, it was estimated that during 1992–2006 the
+          conventionally measured mining GDP was overstated by as much as 31–51% once the loss of mineral wealth was accounted
+          for . Similarly, Mardones and del Rio (2019) find that for Chile (1995–2015) proper depletion accounting would reduce
+          measured mining-sector GDP by nearly 98% (almost wiping out the measured mining GDP growth) . The World Bank (2006) 
+          reported that after deducting resource depletion, countries like Bolivia saw their genuine savings rate turn negative,
+          meaning they were on an unsustainable development path despite positive GDP growth [24]. These findings highlight that
+          a significant share of extractive revenues is not income at all, but rather running down capital. In corporate terms,
+          failing to account for this means that firms could be paying out dividends from what is effectively capital liquidation,
+          thus undermining their long-term financial health.
+          To address these issues, the user cost concept in corporate reporting would treat a portion of revenues as a provision
+          for capital maintenance. This is analogous to depreciation but for natural capital. There is an important connection 
+          here to classical economics and the work of John Maynard Keynes: the term user cost in fact originates from Keynes (1936),
+          who used it in the context of the cost of using up capital equipment. In our context, the “equipment” is 
+          a mineral reserve or oil field [9]. By reviving this concept, modern sustainability accounting is essentially
+          extending traditional accounting’s accrual logic (which matches the consumption of produced capital over time
+          via depreciation) to natural capital. If adopted, user cost accounting would ensure that a company’s financial
+          statements reflect the true, maintainable earnings. Only the portion of revenue that can be earned indefinitely 
+          (through reinvestment of the rest) is counted as income, aligning financial reporting with the Hicksian income ideal.
+
+      
+      </section>
       <!-- Scorecard section -->
       <section id="scorecard">
-        <h2>2. Reinvestment Scorecard</h2>
+        <h2>4. Reinvestment Scorecard</h2>
         <p>
           To assess how extractive companies reinvest resource rents into new
           capital, we introduce a <strong>Reinvestment Scorecard</strong> that
@@ -162,7 +297,7 @@ Overall, our paper integrates theory, empirical analysis, and practical guidance
       </section>
       <!-- SWACC section -->
       <section id="swacc">
-        <h2>3. Sustainability‑Weighted Cost of Capital (SWACC)</h2>
+        <h2>5. Sustainability‑Weighted Cost of Capital (SWACC)</h2>
         <p>
           A pivotal input in calculating user cost is the discount rate used to
           determine how much of today’s revenue must be saved to sustain future
@@ -189,7 +324,7 @@ Overall, our paper integrates theory, empirical analysis, and practical guidance
       </section>
       <!-- Dual reporting section -->
       <section id="dualreporting">
-        <h2>4. Dual Financial Reporting</h2>
+        <h2>6. Dual Financial Reporting</h2>
         <p>
           Traditional financial statements report earnings net of
           depreciation and depletion based on historical cost. To assess
@@ -226,7 +361,7 @@ Overall, our paper integrates theory, empirical analysis, and practical guidance
       </section>
       <!-- Carbon budget section -->
       <section id="carbon">
-        <h2>5. Carbon Budget Accounting</h2>
+        <h2>7. Carbon Budget Accounting</h2>
         <p>
           Meeting global climate goals means that companies must operate within
           finite carbon budgets. We illustrate a hypothetical depletion
@@ -261,7 +396,7 @@ Overall, our paper integrates theory, empirical analysis, and practical guidance
       </section>
       <!-- Discussion section -->
       <section id="discussion">
-        <h2>6. Discussion</h2>
+        <h2>8. Discussion</h2>
         <p>
           The case studies reveal substantial differences between conventional and
           sustainable accounting results. Companies with high reinvestment and
@@ -281,7 +416,7 @@ Overall, our paper integrates theory, empirical analysis, and practical guidance
       </section>
       <!-- Conclusion section -->
       <section id="conclusion">
-        <h2>7. Conclusion and Future Research</h2>
+        <h2>9. Conclusion and Future Research</h2>
         <p>
           User cost accounting provides a robust framework for aligning
           corporate finance with sustainability objectives. By reserving a
